@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import { Calculator } from "./Calculator";
 
 function App() {
-  return (
+    return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <img src={logo}/>
+        <h1>Fahrzeit Preisrechner</h1>
+          <Calculator defaultNumberOfDays={20} defaultObjectsPerDay={30}></Calculator>
       </header>
     </div>
   );
 }
+
 
 export default App;
