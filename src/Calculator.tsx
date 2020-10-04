@@ -14,7 +14,7 @@ export interface CalculatorProperties {
 
 export class Calculator extends React.Component<CalculatorProperties, CalculatorState> {
     p0 = 0.9;
-    percent = 0.02;
+    percent = 0.05;
     basePrice = 50;
 
     constructor(props: CalculatorProperties) {
